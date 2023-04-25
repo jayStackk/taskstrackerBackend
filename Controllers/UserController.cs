@@ -15,11 +15,14 @@ namespace tasktrackerBackend.controllers
     {  
          // Login
          private readonly UserService _data;
-         public UserController(){}
+         public UserController(UserService dataFromService)
+         {
+            _data = dataFromService;
+         }
 
         public bool AddUser(CreateAccountDTO UserToAdd)
         {
-           
+           return _data.AddUser(UserToAdd);
         }
      
         // If the user already exist
