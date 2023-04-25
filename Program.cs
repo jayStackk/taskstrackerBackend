@@ -1,16 +1,14 @@
 
 using Microsoft.EntityFrameworkCore;
-
-
-
-
+using tasktrackerBackend.Services;
 
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddScoped<UserService>();
-builder.Services.AddScoped<BlogService>();
+builder.Services.AddScoped<TaskServices>();
 builder.Services.AddScoped<PasswordService>();
+
 
 var connectionString = builder.Configuration.GetConnectionString("MyBlogString");
 
