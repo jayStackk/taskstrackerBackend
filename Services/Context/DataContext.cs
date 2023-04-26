@@ -7,7 +7,7 @@ using tasktrackerBackend.Models;
 
 namespace tasktrackerBackend.Services.Context
 {
-    public class DataContext
+    public class DataContext : DbContext
     {
         public DbSet<TaskModel> UserInfo { get; set; }
         public DbSet<UserModel> BlogInfo { get; set; }
