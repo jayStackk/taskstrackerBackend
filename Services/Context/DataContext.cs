@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using tasktrackerBackend.Models;
 
 namespace tasktrackerBackend.Services.Context
 {
     public class DataContext
     {
-        public DbSet<UserModel> UserInfo { get; set; }
-        public DbSet<BlogItemModel> BlogInfo { get; set; }
+        public DbSet<TaskModel> UserInfo { get; set; }
+        public DbSet<UserModel> BlogInfo { get; set; }
 
         public DataContext(DbContextOptions options): base(options)
         {}
