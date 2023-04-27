@@ -9,8 +9,8 @@ namespace tasktrackerBackend.Services.Context
 {
     public class DataContext : DbContext
     {
-        public DbSet<TaskModel> UserInfo { get; set; }
-        public DbSet<UserModel> BlogInfo { get; set; }
+        public DbSet<UserModel> UserInfo { get; set; }
+        public DbSet<TaskModel> BlogInfo { get; set; }
 
         public DataContext(DbContextOptions options): base(options)
         {}
