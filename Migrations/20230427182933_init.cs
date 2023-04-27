@@ -16,10 +16,17 @@ namespace tasktrackerBackend.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Username = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Salt = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Hash = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    isAdmin = table.Column<bool>(type: "bit", nullable: false)
+                    TaskName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    UserID = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    PublisherName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Date = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Priority = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Assigned = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    IsCompleted = table.Column<bool>(type: "bit", nullable: false),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
+                    EndDate = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    isAdded = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -32,17 +39,10 @@ namespace tasktrackerBackend.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    TaskName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    UserID = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    PublisherName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Date = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Priority = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Assigned = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    IsCompleted = table.Column<bool>(type: "bit", nullable: false),
-                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
-                    EndDate = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    isAdded = table.Column<bool>(type: "bit", nullable: false)
+                    Username = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Salt = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Hash = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    isAdmin = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {

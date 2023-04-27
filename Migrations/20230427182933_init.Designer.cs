@@ -11,7 +11,7 @@ using tasktrackerBackend.Services.Context;
 namespace tasktrackerBackend.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230426174343_init")]
+    [Migration("20230427182933_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -67,7 +67,7 @@ namespace tasktrackerBackend.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("UserInfo");
+                    b.ToTable("BlogInfo");
                 });
 
             modelBuilder.Entity("tasktrackerBackend.Models.UserModel", b =>
@@ -92,7 +92,7 @@ namespace tasktrackerBackend.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("BlogInfo");
+                    b.ToTable("UserInfo");
                 });
 #pragma warning restore 612, 618
         }

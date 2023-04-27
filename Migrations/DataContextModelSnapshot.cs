@@ -64,7 +64,7 @@ namespace tasktrackerBackend.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("UserInfo");
+                    b.ToTable("BlogInfo");
                 });
 
             modelBuilder.Entity("tasktrackerBackend.Models.UserModel", b =>
@@ -89,7 +89,7 @@ namespace tasktrackerBackend.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("BlogInfo");
+                    b.ToTable("UserInfo");
                 });
 #pragma warning restore 612, 618
         }
