@@ -173,6 +173,13 @@ namespace tasktrackerBackend.Services
             return UserInfo;
         }
 
+        public IEnumerable<UserModel> GetAllUsers()
+        {
+            return _context.UserInfo;
+        }
+
+
+
 
 
     }

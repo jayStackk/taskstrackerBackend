@@ -73,6 +73,14 @@ namespace tasktrackerBackend.controllers
             return _data.GetUserIdDTOByUsername(username);
         }
 
+        [HttpGet]
+        [Route("GetAllUsers")]
+
+        public IEnumerable<UserModel> GetAllUsers()
+        {
+            return _data.GetAllUsers();
+        }
+
 
     }
 }
