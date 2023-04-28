@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace tasktrackerBackend.Models.DTO
 {
-    public class LoginDTO
+    public class PasswordDTO
     { 
         public string? Salt { get; set;}
         public string? Hash { get; set;}

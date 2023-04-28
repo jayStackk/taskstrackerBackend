@@ -15,10 +15,12 @@ namespace tasktrackerBackend.Models
         public string? Date { get; set; }
         public string? Priority { get; set; }
         public string? Assigned { get; set; }
-        public bool IsCompleted { get; set; }
+        public string? IsCompleted { get; set; }
         public bool IsDeleted { get; set; }
         public string? EndDate { get; set; }
         public bool isAdded { get; set; }
+
+        public string? Tags { get; set; }
         public TaskModel (){
             
         }
