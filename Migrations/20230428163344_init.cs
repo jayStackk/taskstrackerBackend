@@ -26,7 +26,8 @@ namespace tasktrackerBackend.Migrations
                     IsCompleted = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     IsDeleted = table.Column<bool>(type: "bit", nullable: false),
                     EndDate = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    isAdded = table.Column<bool>(type: "bit", nullable: false)
+                    isAdded = table.Column<bool>(type: "bit", nullable: false),
+                    Tags = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {

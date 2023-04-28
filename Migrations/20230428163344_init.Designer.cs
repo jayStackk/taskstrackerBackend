@@ -11,7 +11,7 @@ using tasktrackerBackend.Services.Context;
 namespace tasktrackerBackend.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230428044536_init")]
+    [Migration("20230428163344_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -54,6 +54,9 @@ namespace tasktrackerBackend.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PublisherName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Tags")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TaskName")

@@ -19,6 +19,8 @@ namespace tasktrackerBackend.Models
         public bool IsDeleted { get; set; }
         public string? EndDate { get; set; }
         public bool isAdded { get; set; }
+
+        public string? Tags { get; set; }
         public TaskModel (){
             
         }

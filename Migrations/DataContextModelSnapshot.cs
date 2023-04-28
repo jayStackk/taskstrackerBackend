@@ -53,6 +53,9 @@ namespace tasktrackerBackend.Migrations
                     b.Property<string>("PublisherName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Tags")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("TaskName")
                         .HasColumnType("nvarchar(max)");
 
