@@ -17,14 +17,13 @@ var connectionString = builder.Configuration.GetConnectionString("MyBlogString")
 
 
 builder.Services.AddCors(options => {
-    options.AddPolicy("BlogPolicy", 
+    options.AddPolicy("BlogPolicy",
     builder => {
-        builder.WithOrigins("http://localhost:3000")
+        builder.WithOrigins("http://localhost:3000", "http://localhost:3001", "https://tasktrackersprint.azurewebsites.net")
         .AllowAnyHeader()
         .AllowAnyMethod();
     });
 });
-
 // Add services to the container.
 
 
