@@ -23,7 +23,7 @@ namespace tasktrackerBackend.Migrations
                     Date = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Priority = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Assigned = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    IsCompleted = table.Column<bool>(type: "bit", nullable: false),
+                    IsCompleted = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     IsDeleted = table.Column<bool>(type: "bit", nullable: false),
                     EndDate = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     isAdded = table.Column<bool>(type: "bit", nullable: false)

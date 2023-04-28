@@ -11,7 +11,7 @@ using tasktrackerBackend.Services.Context;
 namespace tasktrackerBackend.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230427182933_init")]
+    [Migration("20230428044536_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -44,8 +44,8 @@ namespace tasktrackerBackend.Migrations
                     b.Property<string>("EndDate")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("IsCompleted")
-                        .HasColumnType("bit");
+                    b.Property<string>("IsCompleted")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");

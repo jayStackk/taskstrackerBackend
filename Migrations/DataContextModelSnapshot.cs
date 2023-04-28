@@ -41,8 +41,8 @@ namespace tasktrackerBackend.Migrations
                     b.Property<string>("EndDate")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("IsCompleted")
-                        .HasColumnType("bit");
+                    b.Property<string>("IsCompleted")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
