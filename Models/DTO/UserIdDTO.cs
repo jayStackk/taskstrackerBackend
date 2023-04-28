@@ -9,5 +9,6 @@ namespace tasktrackerBackend.Models.DTO
     {
         public int? UserId { get; set; }
         public string? PublisherName { get; set;}
+        public bool isAdmin { get; set; }
     }
 }
