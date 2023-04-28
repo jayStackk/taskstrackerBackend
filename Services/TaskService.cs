@@ -74,6 +74,12 @@ namespace tasktrackerBackend.Services
             _context.Update<TaskModel>(BlogDelete);
             return _context.SaveChanges() != 0;
         }
+
+         public bool TaskItem(TaskModel newBlogItem)
+        {
+            _context.Add(newBlogItem);
+            return _context.SaveChanges() != 0;
+        }
    
 
     }

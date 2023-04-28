@@ -50,4 +50,11 @@ public class TaskController : ControllerBase
             return _data.DeleteBlogItem(BlogDelete);
         }
 
+          [HttpPost]
+        [Route("AddTask")]
+        public bool AddUser(TaskModel UserToAdd)
+        {
+            return _data.TaskItem(UserToAdd);
+        }
+
     }
