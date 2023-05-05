@@ -170,6 +170,7 @@ namespace tasktrackerBackend.Services
             var foundUser = _context.UserInfo.SingleOrDefault(user => user.Username == Username);
             UserInfo.UserId = foundUser.Id;
             UserInfo.PublisherName = foundUser.Username;
+            UserInfo.isAdmin = foundUser.isAdmin;
             return UserInfo;
         }
 
